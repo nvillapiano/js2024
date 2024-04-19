@@ -9,11 +9,11 @@ defineProps({
 </script>
 
 <template>
-  <div class="titles">
-    <h1>
+  <div class="titles fraunces">
+    <h1 class="title">
       Joanna Solotaroff
     </h1>
-    <h2>
+    <h2 class="sub-title">
       Producer / Death Doula
     </h2>
   </div>
@@ -29,10 +29,16 @@ defineProps({
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 5vh;
   }
 
-  h1 {
+  .title {
     font-size: 10vw;
+    font-style: italic;
+  }
+
+  .sub-title {
+    color: var(--js-mud);
   }
 
 </style>

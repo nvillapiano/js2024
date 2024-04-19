@@ -4,7 +4,7 @@ import Headshot from '../components/Headshot.vue'
 
 <template>
   <main>
-    <h1>Homepage content</h1>
+    <!-- <h1>Homepage content</h1> -->
     <section>
       <Headshot></Headshot>
     </section>

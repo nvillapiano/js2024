@@ -20,14 +20,14 @@ defineProps({
 
 .Headshot {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 2rem;
+  right: 2rem;
   
   img {
     display: block;
     border-radius: 50%;
-    max-block-size: 70vh;
-    min-block-size: 50vw;
+    max-block-size: 30rem;
+    block-size: 40vw;
     aspect-ratio: 1/1;
   }
 }
