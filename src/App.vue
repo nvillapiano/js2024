@@ -25,4 +25,12 @@ import Masthead from './components/Masthead.vue'
     "WONK" 0;
 }
 
+.syne {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 </style>
