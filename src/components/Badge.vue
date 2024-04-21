@@ -30,8 +30,8 @@ defineProps({
   block-size: var(--badgeSize);
   aspect-ratio: 1/1;  
   position: absolute;
-  top: 2rem;
-  right: 2rem;  
+  top: 4rem;
+  right: 4rem;  
   display: flex;
   align-items: center;
   justify-content: center;  

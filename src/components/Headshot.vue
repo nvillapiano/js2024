@@ -19,9 +19,9 @@ defineProps({
 <style scoped>
 
 .Headshot {
-  position: absolute;
+  /* position: absolute;
   bottom: 2rem;
-  right: 2rem;
+  right: 2rem; */
   
   img {
     display: block;

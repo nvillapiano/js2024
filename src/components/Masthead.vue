@@ -27,9 +27,10 @@ defineProps({
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-top: 5vh;
+    margin-left: 5rem;
   }
 
   .title {
