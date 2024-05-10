@@ -13,4 +13,13 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;  
+  /* background: url(@/assets/pisces.png); */
+  background-color: var(--js-peach);
+  
+  /* cursor: url(./pisces.png) 40 40, auto; */
+}
+
+*::selection {
+  color: var(--js-peach);
+  background-color: var(--js-ruby);
 }

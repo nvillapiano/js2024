@@ -34,3 +34,44 @@ body {
   background: var(--js-straw);
   color: var(--js-ruby)
 }
+
+/* Typography */
+
+h1 {
+  font-size: clamp(3rem, 10vw, 10rem);
+  font-style: italic;  
+}
+
+h2 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 600;
+  margin-block: 0 2rem;
+  mix-blend-mode: multiply;
+}
+
+h3 {
+  font-size: clamp(3rem, 5vw, 3rem);
+  font-weight: 700;
+  mix-blend-mode: multiply;
+  /*  */
+  margin: 6rem 0 1rem;
+}
+
+p {
+  font-size: clamp(1.25rem, 3vw, 3rem);
+  mix-blend-mode: multiply;
+  text-decoration: none;
+  color: inherit;
+}
+
+a, a:hover, a:active, a:visited, a:link, a:hover {
+  font-size: clamp(1.25rem, 3vw, 3rem);
+  color: inherit;
+  mix-blend-mode: color-dodge;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+a:hover {
+  text-decoration: underline;
+}
