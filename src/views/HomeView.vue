@@ -14,7 +14,7 @@ import Bio from '../components/Bio.vue'
     </section>
     <section class="Content-panel CreativePortfolio">
       <div class="portfolio-list">
-        <h2>Creative Portfolio</h2>
+        <h2 class="lilita">Creative Portfolio</h2>
         <ul class="list">
           <li>
             <h3>Comedy</h3>
@@ -67,9 +67,9 @@ import Bio from '../components/Bio.vue'
     min-height: 18rem;
     background: var(--js-grass);
     position: relative;
-    margin-top: clamp(5rem, 25vw, 26rem);
-    padding: 10rem 4rem 8rem 4rem;
-    margin-bottom: -24rem;
+    margin-top: 10rem;
+    padding: 8rem 4rem 8rem 4rem;
+    margin-bottom: -8rem;
 
     &::before {
       content: '';
@@ -85,10 +85,9 @@ import Bio from '../components/Bio.vue'
 
 .portfolio-list {
   width: 100%;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* text-align: left;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h1 {
     display: block;
@@ -100,18 +99,42 @@ import Bio from '../components/Bio.vue'
 
   .list {
     text-align: left;
-    width: 60vw;
-    max-width: 50rem;
-    margin: 0 auto;
+    width: clamp(5rem, 60vw, 60rem);
+    margin: 0 auto;    
+    padding: 4rem;
+    border: 1rem dotted var(--js-white);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: calc(100% - 2rem);
+      height: calc(100% - 2rem);
+      background: var(--js-straw);
+      z-index: 0;
+    }
 
     li {
       list-style: none;
       display: flex;
       align-items: flex-start;
       flex-direction: column;
+      margin-bottom: 4rem;
+      position: relative;
+      z-index: 2;
 
     }
   }
 }
+
+h2 {
+  font-size: clamp(4rem, 10vw, 8rem);
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+
 
 </style>
