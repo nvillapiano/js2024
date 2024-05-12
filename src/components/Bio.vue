@@ -32,10 +32,12 @@ defineProps({
 
   .Bio--shape {
     position: absolute;
-    width: 125%;
-    top: -90%;
-    left: -10%;
+    width: 100%;
+    /* top: -90%;
+    left: -10%; */
     z-index: -1;
+    bottom: 0%;
+    left: 0%;
   }
 }
 

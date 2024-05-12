@@ -46,9 +46,10 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 600;
-  margin-block: 0 2rem;
+  margin-bottom: 8rem;  
+  text-align: center;
   mix-blend-mode: multiply;
 }
 
