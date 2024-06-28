@@ -31,7 +31,9 @@
 }
 
 
-
+html, body {
+  overflow-x: hidden;
+}
 
 body {  
   background: var(--js-straw);
@@ -80,7 +82,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.Content-panel:not(.Bio) {
+.Content-panel:not(.Biography) {
   
   h2 {
     font-family: "Lilita One", sans-serif;
