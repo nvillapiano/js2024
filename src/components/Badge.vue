@@ -1,13 +1,3 @@
-<script setup>
-defineProps({
-  // sample prop set-up
-  // msg: {
-  //   type: String,
-  //   required: true
-  // }
-})
-</script>
-
 <template>
   <div class="Badge">
     <div class="Badge--shape">
@@ -22,7 +12,17 @@ defineProps({
 
 
 
-<style scoped>
+<style scoped lang="scss">
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
 
 .Badge {
   --badgeSize: 6rem;
@@ -34,9 +34,10 @@ defineProps({
   right: 4rem;  
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;    
 
-  .Badge--shape {
+
+  &--shape {
     position: absolute;
     block-size: 100%;
     aspect-ratio: 1/1;
@@ -45,7 +46,12 @@ defineProps({
     transform: rotate(20deg);
     border-radius: var(--badgeRadius);
     z-index: -1;
-    transition: transform 6s linear;
+    //
+    animation-name: spin;
+    animation-duration: 1.5s;    
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
 
     &::before {
       content: "";
@@ -60,20 +66,22 @@ defineProps({
     }    
   }
 
-  .Badge--text {    
+  &--text {    
     
     a, a:active, a:visited, a:focus, a:hover, a:link {
       color: var(--js-white);
       text-decoration: none;
       font-size: 1.4rem;
       font-weight: 500;
+      padding: 3rem 1rem;
+      text-wrap: nowrap;
+      mix-blend-mode: normal;
     }    
   }
 
   &:hover {
       
-    .Badge--shape {
-      transform: rotate(720deg);
+    .Badge--shape {      
     }
   }
 

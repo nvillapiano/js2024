@@ -41,14 +41,14 @@ defineProps({
 
 
 
-<style scoped>
+<style scoped lang="scss">
 
 .Portfolio {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*  */
+  // 
   position: relative;
 
   h1 {
@@ -60,13 +60,14 @@ defineProps({
   }
 
   .blob {
-    width: 125%;
-    height: 125%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
+    margin-left: -5vw;
 
     svg {
       transform: rotate(180deg);
@@ -74,7 +75,7 @@ defineProps({
   }
 
   .list {
-    outline: 1px solid red;
+    // outline: 1px solid red;
     width: 60%;
     margin: 0 auto;
     
@@ -85,36 +86,9 @@ defineProps({
 
   }
 
-  /* .list {
-    text-align: left;
-    width: clamp(5rem, 60vw, 60rem);
-    margin: 0 auto;    
-    padding: 4rem;
-    border: 1rem dotted var(--js-white);
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      width: calc(100% - 2rem);
-      height: calc(100% - 2rem);
-      background: var(--js-straw);
-      z-index: 0;
-    }
-
-    li {
-      list-style: none;
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      margin-bottom: 4rem;
-      position: relative;
-      z-index: 2;
-
-    }
-  } */
+  li {
+    margin-top: 4rem;
+  }
 }
 
 </style>

@@ -19,8 +19,8 @@ import Work from '../components/Work.vue'
     </section>
     <section class="Content-panel">
       <Work></Work>
-    </section>
-  </main>
+    </section>    
+  </main>  
 </template>
 
 <style scoped>

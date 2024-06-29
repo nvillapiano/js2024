@@ -1,0 +1,26 @@
+button {
+  @include textStyle__default;
+  background: var(--js-ruby);
+  color: var(--js-white);
+  border: 4px solid var(--js-ruby);  
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    border-radius: 1rem;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    outline: none;
+    border-color: var(--js-white)
+  }
+}
+
+ul, 
+li {
+  list-style: none;
+}

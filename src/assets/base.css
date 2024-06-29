@@ -2,35 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&family=Syne:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
-
-
-:root {
-  --js-coral: #e5897b;
-  --js-peach: #ffd2ab;
-  --js-ruby: #ba5067;
-  --js-plum: #5b3049;
-  --js-mud: #736359;
-  --js-grass: #bcbe9b;  
-  --js-straw: #fff7cf;
-  --js-white: #ffffff;
-}
-
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
-}
-
-
 html, body {
   overflow-x: hidden;
 }
@@ -50,7 +21,7 @@ h1 {
 h2 {
   font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 600;
-  margin-bottom: 8rem;  
+  margin-bottom: 6rem;  
   text-align: center;
   mix-blend-mode: multiply;
 }
@@ -96,3 +67,4 @@ a:hover {
   font-weight: 400;
   font-style: normal; 
 }
+

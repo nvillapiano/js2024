@@ -1,13 +1,16 @@
 <script setup>
 import Masthead from './components/Masthead.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
   <header>
     <Masthead />
   </header>
-
   <RouterView />
+  <footer>
+    <Footer></Footer>
+  </footer>
 </template>
 
 <style >
